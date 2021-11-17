@@ -14,7 +14,7 @@ echo 'eval "$(conda shell.bash hook)" && conda activate miga' > ~/.miga_modules
 2. Install R and ruby for the miga environment, ruby must be version 2.7
 ```
 conda install -c conda-forge r-essentials=4.1
-conda install -c conda-forge ruby
+conda install -c conda-forge ruby=2.7
 conda install sqlite
 . ~/.miga_modules && ruby --version && R --version
 ```
@@ -95,7 +95,7 @@ ln -s ~/shared-p/apps/MyTaxa/AllGenomes.faa.dmnd ~/.miga_db/AllGenomes.faa.dmnd
 ### link to MyTaxa folder
 ln -s ~/.miga_db/AllGenomes.faa.dmnd ./AllGenomes.faa.dmnd
 . ~/.miga_modules
-## check again for database, ruby must be version 2.7, reinstall it via conda-forge if the version is not correct
+## check again for database, ruby must be version 2.7, reinstall it via conda-forge if the version is not correct: conda install -c conda-forge ruby=2.7
 miga init --auto
 ```
 
