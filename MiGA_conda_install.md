@@ -24,6 +24,7 @@ conda install sqlite
 conda install -c conda-forge -c bioconda falco seqtk fastp hmmer barrnap
 conda install -c conda-forge -c bioconda mcl bedtools blast prodigal diamond
 conda install -c bioconda krona=2.8
+conda install -c bioconda trnascan-se
 ### install newest version of miga via gem. gem should be installed automatically after installing ruby
 gem install miga-base
 ```
